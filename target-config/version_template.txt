@@ -1,0 +1,6 @@
+<script type="text/javascript">
+  const version = "Rev 1.0.$WCREV$";
+  export default{
+    version
+  }
+</script>

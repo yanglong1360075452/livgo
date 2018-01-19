@@ -1,0 +1,33 @@
+
+腾讯云资源信息:
+
+主机名称 ins-gkfnp2yz 公网IP：118.89.114.55，密码：Goldbird1 
+操作系统 CentOS 7.2 64位 
+CPU 2核 
+内存 4GB 
+系统盘 20GB(本地磁盘) 
+数据盘 100GB(本地磁盘) 
+公网带宽 10Mbps
+
+
+腾讯云账户/密码：85113359@qq.com / Goldbird1
+
+
+客户南京金雀联系人：何永林 13605199359
+
+---------------------
+PHP&JAVA运行环境（CentOS7.0 64位 | LNMT集成包）
+提供商：长沙网久软件有限公司
+操作系统：CentOS 7.0 64位
+依赖云服务：无
+最新版本：2.0.0
+集成软件：Nginx1.10、Tomcat1.8、PHP5.5、Java1.8、MySQL5.5、phpMyAdmin4.4、Pure-FTPd1.0.42、Redis3.0.7、Memcached1.4.25、Jemalloc4.1.0
+
+
+MySQL管理
+http://118.89.114.55/phpMyAdmin    root  livgo2017
+
+
+域名: 	  livgo.com.cn
+二级域名：server.livgo.com.cn
+

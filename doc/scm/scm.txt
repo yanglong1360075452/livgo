@@ -1,0 +1,20 @@
+
+SVN
+https://oa.wizinno.com/svn/jinque_livego_server/trunk
+
+
+TEST Server
+
+
+Production Server
+
+
+
+开发环境
+
+JDK：
+
+Tomcat Ver：
+
+
+IDE：

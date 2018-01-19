@@ -1,0 +1,19 @@
+GlassRTMPLive.apk ADB方式安装说明
+
+维护人：100100.玖趣工程师.金雀LiveGo项目 2017-06-21 17:56:11
+
+
+耳机端APP, 作为耳机端同管理服务器后台的通讯接口
+
+
+安装方式：用adb工具将GlassRTMPLive.apk文件push到/system/app/下面 重启耳机
+
+
+详细操作步骤：
+adb root
+adb remount
+adb shell ls /system/app -l                     (显示/system/app目录下的文件，查看GlassRTMPLive.apk文件生成时间)
+adb push /temp/GlassRTMPLive.apk /system/app    (push GlassRTMPLive.apk到/system/app/目录下面)
+adb shell ls /system/app -l                     (显示/system/app目录下的文件，查看GlassRTMPLive.apk文件生成时间，判断是否push成功)
+
+

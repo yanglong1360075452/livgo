@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.wizinno.livgo"/>
+
+    <bean id="multipartResolver"  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="10000000"/>
+    </bean>
+    <!--&lt;!&ndash; 定时任务 &ndash;&gt;-->
+    <!--<task:annotation-driven /> &lt;!&ndash; 定时器开关&ndash;&gt;-->
+    <!--<bean id="myTaskXml" class="com.wizinno.livgo.app.UpdateLive"></bean>-->
+    <!--<task:scheduled-tasks>-->
+        <!--<task:scheduled ref="myTaskXml" method="run" cron="*/60 *10 * * * ?" />-->
+    <!--</task:scheduled-tasks>-->
+
+    <!-- Loads MongoDB configuraton -->
+    <import resource="mongo-config.xml"/>
+
+    <bean class="com.wizinno.livgo.app.mongo.SaveMongoEventListener"></bean>
+
+</beans>
